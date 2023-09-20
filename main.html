@@ -10,14 +10,35 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let max = arr[0], s_max = arr[0];
+for(let i = 0; i < arr.length-1; i++){
+   if(arr[i] == arr[i+1]){
+       System.out.println("-Infinity");
+       return;
+   }
+}
+if(arr.length > 1){
+for(let i = 0; i < arr.length; i++){
+   if( arr[i] > max){
+       max = arr[i];
+   }
+}
+// return max
+for(let i = 0; i < arr.length; i++){
+   if(arr[i] <max && arr[i] > s_max){
+       s_max = arr[i];
+   }
+}
+	return s_max;
+// System.out.println(s_max);
 			
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				// arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
 		}
