@@ -10,11 +10,11 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			let max = arr[0], s_max = arr[0];
+		let max = arr[0], s_max = arr[0];
 for(let i = 0; i < arr.length-1; i++){
    if(arr[i] == arr[i+1]){
-       // coSystem.out.println("-Infinity");
 	   console.log("-Infinity");
+       // System.out.println("-Infinity");
        return;
    }
 }
@@ -24,8 +24,8 @@ for(let i = 0; i < arr.length; i++){
        max = arr[i];
    }
 }
-// return max
-for(let i = 0; i < arr.length; i++){
+// System.out.println(max);
+for(int i = 0; i < arr.length; i++){
    if(arr[i] <max && arr[i] > s_max){
        s_max = arr[i];
    }
@@ -33,9 +33,11 @@ for(let i = 0; i < arr.length; i++){
 	return s_max;
 // System.out.println(s_max);
 }
-			else{
-				console.log("-Infinity");
-			}
+
+else{
+	console.log("-Infinity");
+   // System.out.println("-Infinity");
+}
 			
 			
 		}
