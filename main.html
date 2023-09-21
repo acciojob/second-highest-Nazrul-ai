@@ -13,7 +13,8 @@
 		let max = arr[0], s_max = arr[0];
 for(let i = 0; i < arr.length-1; i++){
    if(arr[i] == arr[i+1]){
-	   console.log("-Infinity");
+	   return "-Infinity";
+	   // console.log("-Infinity");
        // System.out.println("-Infinity");
        return;
    }
@@ -35,7 +36,8 @@ for(let i = 0; i < arr.length; i++){
 }
 
 else{
-	console.log("-Infinity");
+	return "-Infinity";
+	// console.log("-Infinity");
    // System.out.println("-Infinity");
 }
 			
@@ -43,10 +45,10 @@ else{
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				// arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
 		}
